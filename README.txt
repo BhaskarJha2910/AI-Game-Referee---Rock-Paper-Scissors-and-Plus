@@ -1,12 +1,10 @@
-# AI Game Referee – Rock–Paper–Scissors–Plus
+ AI Game Referee – Rock–Paper–Scissors–Plus
 
-## Overview
+Overview
 This project implements a minimal conversational AI referee for a Rock–Paper–Scissors–Plus game. The referee manages a complete best-of-three game between a user and a bot by enforcing rules, tracking state across turns, validating inputs, and providing clear round-by-round explanations.  
 The solution is designed as a simple CLI/chat-style interaction, focusing on correctness, state modeling, and clean separation of responsibilities.
 
----
-
-## Game Rules
+Game Rules
 - The game is **best of 3 rounds**
 - Valid moves: `rock`, `paper`, `scissors`, `bomb`
 - Each player may use **bomb only once per game**
@@ -15,9 +13,8 @@ The solution is designed as a simple CLI/chat-style interaction, focusing on cor
 - Invalid input wastes the round
 - The game ends automatically after 3 rounds
 
----
 
-## State Model
+State Model
 Game state is maintained in a persistent Python dictionary that lives outside the prompt and survives across turns.  
 The state tracks:
 - Current round number
@@ -57,3 +54,4 @@ With additional time, the system could be extended to include:
 How to Run
 bash
 python game_referee.py
+
